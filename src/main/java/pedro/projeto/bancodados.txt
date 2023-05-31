@@ -1,0 +1,12 @@
+-- Criação da database
+CREATE DATABASE IF NOT EXISTS database_alunos;
+
+-- Uso da database
+USE database_alunos;
+
+-- Criação da tabela
+CREATE TABLE IF NOT EXISTS alunos (
+  matricula CHAR(4) PRIMARY KEY,
+  nome VARCHAR(50) NOT NULL,
+  curso VARCHAR(50) NOT NULL
+);
